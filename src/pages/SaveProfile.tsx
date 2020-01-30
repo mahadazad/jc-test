@@ -45,9 +45,9 @@ const SaveProfile: React.FC = () => {
           <Input label="Profile Image" name="image" type="file" />
           <Input label="E-mail" name="email" />
           {!uid && <Input label="Password" type="password" name="password" />}
-          <Input label="Phone Number" name="phoneNumber" />
+          <Input label="Phone Number" name="phoneNumber" type="number" />
           <Input label="Address" name="address" />
-          <Input label="Date of Birth" name="dateOfBirth" />
+          <Input label="Date of Birth" name="dateOfBirth" type="date" />
           {secretQuestions.map((data, key) => (
             <Input key={key} label={data.question} name={data.key} />
           ))}

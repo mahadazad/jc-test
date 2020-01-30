@@ -7,7 +7,7 @@ interface Props {
   name: string;
   placeholder?: string;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  type?: 'text' | 'password' | 'file';
+  type?: 'text' | 'password' | 'file' | 'date' | 'number';
 }
 
 const Input: React.FC<Props> = ({
